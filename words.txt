@@ -1,0 +1,72 @@
+The: 3
+around: 1
+graphics: 4
+from: 4
+by: 2
+be: 2
+any: 2
+which: 2
+various: 4
+mount: 2
+No of threads: 1, Time Taken:0.000459
+
+The: 3
+around: 1
+graphics: 4
+from: 4
+by: 2
+be: 2
+any: 2
+which: 2
+various: 4
+mount: 2
+No of threads: 2, Time Taken:0.000430
+
+The: 3
+around: 1
+graphics: 4
+from: 4
+by: 2
+be: 2
+any: 2
+which: 2
+various: 4
+mount: 2
+No of threads: 4, Time Taken:0.003148
+
+The: 3
+around: 1
+graphics: 4
+from: 4
+by: 2
+be: 2
+any: 2
+which: 2
+various: 4
+mount: 2
+No of threads: 8, Time Taken:0.003151
+
+The: 3
+around: 1
+graphics: 4
+from: 4
+by: 2
+be: 2
+any: 2
+which: 2
+various: 4
+mount: 2
+No of threads: 16, Time Taken:0.000524
+
+
+
+
+words.txt"The","around","graphics","from","by","be","any","which","various","mount"
+jdghcui jkgfyu ugo graphics world
+frpm,
+from
+by the which mount various be
+any one bhd cii y
+A paragraph is a series of related sentences developing a central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences that supports one central, unified idea. Paragraphs add one idea at a time to your broader argument.
+Graphics (from Ancient Greek γραφικός (graphikós) 'pertaining to drawing, painting, writing, etc. ') are visual images or designs on some surface, such as a wall, canvas, screen, paper, or stone, to inform, illustrate, or entertain. ... Graphics often combine text, illustration, and color.
+Various means “of different kinds” or “differing one from another.” How does various compare to different, distinct, and diverse? Find out on Thesaurus.com.

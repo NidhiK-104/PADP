@@ -22,12 +22,12 @@ int is_equal(char* a,const char* key, int ignore_case) {
 	}
 	if(ignore_case != 0) {
 		int i;
-		#pragma omp parallel for shared(a) private(i) 
+		//#pragma omp parallel for shared(a) private(i) 
 		for(i = 0; i < len_a; i++) {
 			if(a[i] > 90)
 				a[i] -=  32;
 		}
-		#pragma omp parallel for shared(b) private(i) 
+		//#pragma omp parallel for shared(b) private(i) 
 		for(i = 0; i < len_b; i++) {
 			if(b[i] > 90)
 			b[i] -=  32;
@@ -66,9 +66,7 @@ int main() {
 	int i;
 	int nt = 0;
 	for(nt=1;nt<=16;nt=nt*2){
-	#pragma omp parallel for shared(counts, search_words) private(i) num_threads(nt)
 	for(i = 0; i < COUNT; i++) { counts[i] = 0; }
-
 	double t = omp_get_wtime();
 	#pragma omp parallel for shared(counts, search_words) private(i) num_threads(nt)
 	for(i = 0; i < COUNT; i++) {
@@ -78,5 +76,4 @@ int main() {
 	for(i = 0; i < COUNT; i++) { printf("\n%s: %ld",search_words[i],counts[i]); }
 	printf("\nNo of threads: %d, Time Taken:%lf\n",nt,t);}
 }
-
 

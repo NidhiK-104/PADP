@@ -22,7 +22,7 @@ int main(int argc,char **argv)
 	{
 	for(root=1; root<numProcs; root++){
 		MPI_Recv(&mess,BUFSIZE,MPI_CHAR,root,tag,MPI_COMM_WORLD,&status);
-		printf("%s is message process of rank %d sent to process of rank %d\n",mess,myRank,root);
+		printf("%s is message process of rank %d sent to process of rank %d\n",mess,root,myRank);
 	}
 	}
 	MPI_Finalize();

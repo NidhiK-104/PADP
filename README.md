@@ -5,7 +5,7 @@
 #### cc filename.c -fopenmp -lgd (4) --> ./a.out input.png output.png </br>
 
 ### MPI
-#### mpicc filename.c -o file --> mpi run -np x file (1b,5) </br>
+#### mpicc filename.c -o file --> mpirun -np x file (1b,5) </br>
 
 ### OpenCL
 #### nvcc filename.cu -lOpenCL --> ./a.out </br>

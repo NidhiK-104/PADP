@@ -8,26 +8,24 @@ double t = 0.0;
 inline long Strike( bool composite[], long i,long stride, long limit)
 {
 	for( ; i<=limit; i+=stride )
-	composite[i] = true;
+		composite[i] = true;
 	return i;
 }
 
-long CacheUnfriendlySieve( long n )
+long CacheUnfriendlySieve(long n)
 {
 	long count = 0;
 	long m = (long)sqrt((double)n);
 	bool* composite = new bool[n+1];
 	memset( composite, 0, n );
 	t = omp_get_wtime();
-	for( long i=2; i<=m; ++i )
-		if( !composite[i] ) {
+	for( long i=2; i<=m; ++i)
+		if( !composite[i]) {
 			++count;// Strike walks array ofsize n here.
 			Strike( composite, 2*i, i, n );
 		}
-	for( long i=m+1; i<=n; ++i )
-		if( !composite[i] ){
-    			++count;
-              	}
+	for( long i=m+1; i<=n; ++i)
+		if(!composite[i]) ++count;
        	t = omp_get_wtime() - t;
 	delete[] composite;
 	return count;
@@ -64,7 +62,7 @@ long CacheFriendlySieve( long n )
 	return count;
 }
 
-long ParallelSieve( long n )
+long ParallelSieve( long n)
 {
 	long count = 0;
 	long m = (long)sqrt((double)n);
@@ -112,7 +110,7 @@ long ParallelSieve( long n )
 
 int main()
 {
-	int i;
+	int i,numThreads;
 	long a[]={1000000,10000000,100000000};
 	//long a[]={10000000,100000000,1000000000};
 	for(i=0;i<3;i++){

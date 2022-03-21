@@ -71,7 +71,7 @@ long ParallelSieve( long n)
 	t= omp_get_wtime();
         #pragma omp parallel
 	{
-		bool* composite = new bool[n+1];
+		bool* composite = new bool[m+1];
 		long* striker = new long[m];
 		#pragma omp single
 		{
